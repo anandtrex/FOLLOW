@@ -3,8 +3,6 @@ import string
 #matplotlib.use('Agg')
 #matplotlib.use('GTK')
 from pylab import *
-from matplotlib import collections
-from mpl_toolkits.axes_grid.inset_locator import inset_axes
 
 ## choose figure or poster defaults
 #fig_defaults = 'poster'                                 # poster defaults

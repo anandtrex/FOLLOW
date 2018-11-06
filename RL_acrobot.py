@@ -21,10 +21,10 @@ bot = 'arm_2link'
 #bot = 'acrobot_2link'
 
 ## choose one task out of the below:
-#task = 'reach1'
+task = 'reach1'
 #task = 'reach2'
 #task = 'reach3'
-task = 'swing'
+# task = 'swing'
 #task = 'swing2'
 
 #np.random.seed(1)
@@ -258,6 +258,6 @@ def animate(i):
 #  see https://github.com/matplotlib/matplotlib/issues/4901/
 # install python-qt4 via apt-get and set QT4Agg backend; as at top of this file
 anim = animation.FuncAnimation(fig, animate, 
-           init_func=init, frames=timetaken[-1], interval=0, blit=True, repeat=False)
+           init_func=init, frames=timetaken[-1], interval=200, blit=True, repeat=False)
 
 plt.show()
