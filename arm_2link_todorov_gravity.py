@@ -22,6 +22,10 @@ class Arm(object):
         self.m1, self.m2 = m1, m2
         self.l1, self.l2 = l1, l2
 
+    @property
+    def dim_config_space(self):
+        return 2
+
     def armXY(self, angles):
         # CAUTION: I added np.pi/2 in below armAngles(), so this fn is not consistent with that fn!
         l1 = self.l1   # segment length
